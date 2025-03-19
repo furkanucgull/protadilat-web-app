@@ -36,7 +36,10 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <section className={`py-16 bg-white text-center overflow-x-hidden ${roboto.className}`}>
+    <section
+        id="services"
+      className={`py-16 bg-white text-center overflow-x-hidden ${roboto.className}`}
+    >
       <div className="container mx-auto px-6 lg:px-20">
         <motion.h2
           initial={{ opacity: 0, y: -30 }}

@@ -6,6 +6,8 @@ import HowDoesItWork from "@/sections/HowDoesItWork";
 import Services from "@/sections/Services";
 import TrustedSection from "@/sections/TrustedSection";
 import Whatsapp from "@/components/Whatsapp";
+import "./globals.css";
+import Footer from "@/sections/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +20,7 @@ const Home = () => {
       <Services />
       <TrustedSection />
       <Whatsapp />
+      <Footer />
     </main>
   );
 };

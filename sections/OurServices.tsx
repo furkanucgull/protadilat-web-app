@@ -11,11 +11,12 @@ const OurServices = () => {
 
   return (
     <motion.section
+        id="projects"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1.5, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className={` ${figtree.className}`}
+      className={` ${figtree.className} overflow-x-hidden`}
     >
       <div
         ref={scrollRef}

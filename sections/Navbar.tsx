@@ -6,10 +6,10 @@ const Navbar = () => {
       <div className="justify-center flex">
         <div className=" m-8 mt-2 sm:flex hidden items-center justify-center rounded-full w-5xl  bg-[#292F3B]/45 gap-6 ">
           <NavLinks href="/" name="Anasayfa" />
-          <NavLinks href="#services" name="Servislerimiz" />
           <NavLinks href="#projects" name="Projelerimiz" />
+          <NavLinks href="#services" name="Servislerimiz" />
           <NavLinks href="#" name="Referanslarımız" />
-          <NavLinks href="#" name="İletişim" />
+          <NavLinks href="#contact" name="İletişim" />
         </div>
       </div>
     </header>

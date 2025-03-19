@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <motion.section
-      initial={{ scale: 1 }}
+      initial={{ scale: 0.9 }}
       style={{ scale: sectionValue }}
       className="min-h-screen   my-10 overflow-x-hidden "
     >

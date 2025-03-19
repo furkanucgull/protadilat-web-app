@@ -23,7 +23,7 @@ const faqs = [
 
 const HowDoesItWork = () => {
   return (
-    <section className="min-h-screen bg-[#F0F4FA] py-10">
+    <section className="min-h-screen bg-[#F0F4FA] py-10 overflow-x-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
