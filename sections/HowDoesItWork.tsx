@@ -31,7 +31,7 @@ const HowDoesItWork = () => {
         viewport={{ once: true }}
         className="flex justify-center"
       >
-        <h1 className={`text-4xl font-bold ${roboto.className}`}>
+        <h1 className={`text-4xl font-bold `}>
           Nasıl Çalışır?
         </h1>
       </motion.div>
