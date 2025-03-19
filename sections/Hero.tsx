@@ -5,9 +5,14 @@ const Hero = () => {
   const scrollRef = useRef(null);
   const { scrollYProgress } = useScroll();
   const paragraphValue = useTransform(scrollYProgress, [0, 1], ["0%", "55%"]);
+  const sectionValue = useTransform(scrollYProgress, [1, 0], ["40%", "100%"]);
 
   return (
-    <section className="min-h-screen my-10 ">
+    <motion.section
+      initial={{ scale: 1 }}
+      style={{ scale: sectionValue }}
+      className="min-h-screen   my-10 overflow-x-hidden "
+    >
       <div ref={scrollRef} className=" grid  grid-cols-10  min-h-screen">
         <motion.div
           transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -18,7 +23,6 @@ const Hero = () => {
             Güvenilir & Kaliteli{" "}
           </h1>
           <h3 className="text-orange-400 lg:text-5xl text-sm">
-            {" "}
             Tamirat ve Tadilat Hizmetleri
           </h3>
           <p className="text-white md:text-xl  text-sm">
@@ -38,7 +42,7 @@ const Hero = () => {
           className="bg-contain xl:ml-56 bg-no-repeat  min-h-screen col-span-4 mt-4 "
         ></motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 export default Hero;
