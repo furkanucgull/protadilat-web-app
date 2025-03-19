@@ -33,17 +33,17 @@ const services = [
   {
     title: "Sıva",
     image: "assets/images/siva.jpg",
-    icon: "🔌",
+    icon: "🖌",
   },
   {
     title: "Çelik İşleri",
     image: "assets/images/construction.jpg",
-    icon: "🔌",
+    icon: "🛠️",
   },
   {
     title: "Montaj",
     image: "assets/images/montaj.jpg",
-    icon: "🔌",
+    icon: "🔧",
   },
 ];
 import { roboto } from "@/public/assets/fonts/font";

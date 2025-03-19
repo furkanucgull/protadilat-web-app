@@ -1,12 +1,29 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
+
+const images = [
+  "/assets/images/slider-1.jpg",
+  "/assets/images/slider-2.jpg",
+  "/assets/images/slider-3.jpg",
+  "/assets/images/slider-4.jpg",
+];
 
 const Hero = () => {
   const scrollRef = useRef(null);
   const { scrollYProgress } = useScroll();
   const paragraphValue = useTransform(scrollYProgress, [0, 1], ["0%", "55%"]);
   const sectionValue = useTransform(scrollYProgress, [1, 0], ["40%", "100%"]);
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <motion.section
@@ -15,19 +32,22 @@ const Hero = () => {
       className="min-h-screen my-10 overflow-x-hidden relative"
     >
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          className="w-full h-full object-cover"
-          style={{ filter: "brightness(0.6)" }}
-        >
-          <source src="/assets/videos/vid2.webm" type="video/webm" />
-          <source src="/assets/videos/vid2.mp4" type="video/mp4" />
-          Tarayıcınız video etiketini desteklemiyor.
-        </video>
+        {images.map((image, index) => (
+          <motion.div
+            key={image}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: index === currentImageIndex ? 1 : 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full"
+            style={{
+              backgroundImage: `url(${image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              filter: "brightness(0.6)",
+            }}
+          />
+        ))}
       </div>
-
 
       <div className="relative z-10">
         <div ref={scrollRef} className="grid grid-cols-10 min-h-screen">
