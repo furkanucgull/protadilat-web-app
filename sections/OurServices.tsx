@@ -1,5 +1,5 @@
 "use client";
-import { figtree, figtree_light } from "@/public/assets/fonts/font";
+import {figtree, roboto} from "@/public/assets/fonts/font";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -81,7 +81,7 @@ const OurServices = () => {
               <h1 className="lg:text-5xl text-3xl ">
                 Profesyonel Tamir ve Tadilat hizmeti alın
               </h1>
-              <p className={`md:text-lg text-sm ${figtree_light.className}`}>
+              <p className={`md:text-lg text-sm ${roboto.className}`}>
                 Yetenekli ve kendini işine adamış tamircilerden oluşan ekibimiz,
                 yaşam alanlarınızın konforunu ve işlevselliğini artırmak için
                 büyük veya küçük her türlü projeyi üstlenmeye hazır. Damlayan

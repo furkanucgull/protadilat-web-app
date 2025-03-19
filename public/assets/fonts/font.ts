@@ -16,7 +16,4 @@ export const figtree = Figtree({
   subsets: ["latin"],
   weight: "600",
 });
-export const figtree_light = Figtree({
-  subsets: ["latin"],
-  weight: "400",
-});
+

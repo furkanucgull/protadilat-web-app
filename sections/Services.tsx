@@ -30,6 +30,21 @@ const services = [
     image: "assets/images/electrik.jpg",
     icon: "🔌",
   },
+  {
+    title: "Sıva",
+    image: "assets/images/siva.jpg",
+    icon: "🔌",
+  },
+  {
+    title: "Çelik İşleri",
+    image: "assets/images/construction.jpg",
+    icon: "🔌",
+  },
+  {
+    title: "Montaj",
+    image: "assets/images/montaj.jpg",
+    icon: "🔌",
+  },
 ];
 import { roboto } from "@/public/assets/fonts/font";
 import { motion } from "framer-motion";

@@ -20,6 +20,9 @@ const DemirTadilat = () => {
                 <p className="text-gray-200">SU TESİSATI</p>
                 <p className="text-gray-200">SERAMİK, KARO</p>
                 <p className="text-gray-200">SIVI BOYA</p>
+                <p className="text-gray-200">Sıva</p>
+                <p className="text-gray-200">Montaj</p>
+                <p className="text-gray-200">Çelik İşleri</p>
             </div>
             <p className="text-gray-300 italic mb-6">
                 YAPIYA DAHİL NE VARSA 7/24 HİZMETİNİZDEYİZ

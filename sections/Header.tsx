@@ -103,11 +103,22 @@ const Header = () => {
               </div>
 
               <nav className="mt-6 flex flex-col gap-4 text-lg ">
-                <NavLinks href="/" name="Anasayfa" />
-                <NavLinks href="#" name="Hakkımızda" />
-                <NavLinks href="#" name="Servislerimiz" />
-                <NavLinks href="#" name="Referanslarımız" />
-                <NavLinks href="#" name="İletişim" />
+                <a onClick={toggleMenu}>
+                  <NavLinks href="/" name="Anasayfa" />
+                </a>
+                <a onClick={toggleMenu}>
+                  <NavLinks href="#projects" name="Projelerimiz" />
+                </a>
+                <a onClick={toggleMenu}>
+                  <NavLinks href="#services" name="Servislerimiz" />
+                </a>
+
+                <a onClick={toggleMenu}>
+                  <NavLinks href="#" name="Referanslarımız" />
+                </a>
+                <a onClick={toggleMenu}>
+                  <NavLinks href="#contact" name="İletişim" />
+                </a>
               </nav>
             </motion.div>
           </>
