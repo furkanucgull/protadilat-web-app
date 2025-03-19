@@ -16,7 +16,7 @@ const OurServices = () => {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1.5, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className={` ${roboto.className} overflow-x-hidden`}
+      className={` ${roboto.className} overflow-x-hidden text-black`}
     >
       <div
         ref={scrollRef}
@@ -76,12 +76,12 @@ const OurServices = () => {
           transition={{ duration: 1.5, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
-          <div className="lg:p-20 p-5 lg:my-40 space-y-10">
+          <div className="lg:p-20 p-5 lg:my-40 space-y-10 text-black">
             <div className="space-y-5">
-              <h1 className="lg:text-5xl text-3xl ">
+              <h1 className="lg:text-5xl text-3xl text-black ">
                 Profesyonel Tamir ve Tadilat hizmeti alın
               </h1>
-              <p className={`md:text-lg text-sm ${roboto.className}`}>
+              <p className={`md:text-lg text-sm ${roboto.className} text-black`}>
                 Yetenekli ve kendini işine adamış tamircilerden oluşan ekibimiz,
                 yaşam alanlarınızın konforunu ve işlevselliğini artırmak için
                 büyük veya küçük her türlü projeyi üstlenmeye hazır. Damlayan
@@ -106,8 +106,8 @@ const OurServices = () => {
                   />
                 </div>
                 <div>
-                  <h1 className="md:text-2xl text-xl">7/24</h1>
-                  <p className="lg:text-xl text-base">Aktif Hizmet</p>
+                  <h1 className="md:text-2xl text-xl text-black">7/24</h1>
+                  <p className="lg:text-xl text-base text-black">Aktif Hizmet</p>
                 </div>
               </motion.div>
 

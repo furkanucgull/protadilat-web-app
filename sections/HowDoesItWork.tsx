@@ -23,7 +23,7 @@ const faqs = [
 
 const HowDoesItWork = () => {
   return (
-    <section className="min-h-screen bg-[#F0F4FA] py-10 overflow-x-hidden">
+    <section className="min-h-screen bg-[#F0F4FA] py-10 overflow-x-hidden text-black">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -31,7 +31,7 @@ const HowDoesItWork = () => {
         viewport={{ once: true }}
         className="flex justify-center"
       >
-        <h1 className={`text-4xl font-bold `}>
+        <h1 className={`text-4xl font-bold text-black ${roboto.className}`}>
           Nasıl Çalışır?
         </h1>
       </motion.div>
