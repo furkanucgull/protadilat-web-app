@@ -1,5 +1,5 @@
 "use client";
-import { figtree } from "@/public/assets/fonts/font";
+import {figtree, roboto} from "@/public/assets/fonts/font";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -31,7 +31,7 @@ const HowDoesItWork = () => {
         viewport={{ once: true }}
         className="flex justify-center"
       >
-        <h1 className={`text-4xl font-bold ${figtree.className}`}>
+        <h1 className={`text-4xl font-bold ${roboto.className}`}>
           Nasıl Çalışır?
         </h1>
       </motion.div>

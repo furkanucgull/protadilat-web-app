@@ -22,6 +22,7 @@ const Hero = () => {
           className="w-full h-full object-cover"
           style={{ filter: "brightness(0.6)" }}
         >
+          <source src="/assets/videos/vid2.webm" type="video/webm" />
           <source src="/assets/videos/vid2.mp4" type="video/mp4" />
           Tarayıcınız video etiketini desteklemiyor.
         </video>

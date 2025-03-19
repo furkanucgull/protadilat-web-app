@@ -1,5 +1,5 @@
 "use client";
-import {figtree, roboto} from "@/public/assets/fonts/font";
+import { roboto} from "@/public/assets/fonts/font";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -16,7 +16,7 @@ const OurServices = () => {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1.5, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className={` ${figtree.className} overflow-x-hidden`}
+      className={` ${roboto.className} overflow-x-hidden`}
     >
       <div
         ref={scrollRef}
